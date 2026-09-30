@@ -1,0 +1,24 @@
+/* Shared text contrast; preserve white text on hero images and dark navigation. */
+body{font-weight:500}
+body p,body small,body label,body input,body select,body textarea,body td{font-weight:500}
+body h1,body h2,body h3,body h4,body h5,body th,body label,body strong{font-weight:700}
+body button,body .btn,body .button{font-weight:700}
+body input::placeholder,body textarea::placeholder{color:#71677e;opacity:1;font-weight:500}
+body .form-control,body .form-group input:not([type=checkbox]):not([type=radio]),body textarea,body select{color:#30263f;font-weight:600}
+body .muted,body .text-muted,body .section-caption,body .page-breadcrumb,body .detail-meta,body .rich-content,
+body .summary-section p,body .summary-item,body .widget-caption,body .widget-footnote,body .guest-row small,
+body .passenger-excel-import p,body .privacy-section,body .detail-service-grid p,body .detail-policy-grid p,
+body .order-card p,body .order-card small,body .order-finance dt,body .order-passenger small,
+body .staff-subtitle{color:#5b5069!important;font-weight:500}
+body .booking-header,body .summary-heading,body .form-group label,body .order-card label{color:#30243f}
+body.admin-theme .right_col,body.guide-theme .container{color:#352b43}
+body.admin-theme .right_col table td,body.guide-theme table td{color:#40354e;font-weight:500}
+body.admin-theme .right_col table th,body.guide-theme table th{color:#342144;font-weight:700}
+body.admin-theme .right_col .control-label,body.admin-theme .right_col .col-form-label,
+body.guide-theme .form-group label{color:#392b49;font-weight:700}
+body.admin-theme .right_col small,body.guide-theme .card small,
+body.admin-theme .dataTables_info,body.admin-theme .dataTables_filter,
+body.admin-theme .stepContainer label{color:#62536f;font-weight:500}
+body.admin-theme .nav.side-menu>li>a,body.admin-theme .nav.child_menu>li>a{color:#eee8ff;font-weight:600}
+body .pastel-tour-card p,body .tour-card p,body .tour-card small{font-weight:500}
+body .site-footer p,body .site-footer small{font-weight:500}

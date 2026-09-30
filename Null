@@ -1,0 +1,1 @@
+\$col- . ' (' . \$col- . ', ' . (\$col- === 'YES' ? 'nullable' : 'not null') . ')\n';

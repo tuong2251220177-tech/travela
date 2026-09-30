@@ -1,0 +1,1 @@
+<div class="workspace-heading"><div><span>TRAVELA / QUẢN TRỊ</span><h1>{{ $title ?? 'Tổng quan' }}</h1><p>Quản lý hiệu quả, trọn vẹn từng hành trình.</p></div><a href="{{ route('home') }}" class="workspace-site-link"><i class="fa fa-external-link" aria-hidden="true"></i> Xem website</a></div>

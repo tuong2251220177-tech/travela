@@ -1,0 +1,3 @@
+﻿@include('clients.blocks.dau-trang-giao-dien', ['title' => 'Thanh toán PayPal', 'pageClass' => 'booking-page'])
+<main id="main" class="shell section"><div class="detail-panel" style="max-width:560px;margin:0 auto"><span class="eyebrow">THANH TOÁN TRAVELA</span><h1 style="font-size:28px;margin:15px 0">Thanh toán qua PayPal</h1><p class="muted">Nhập số tiền cần thanh toán bằng USD để tiếp tục.</p><form action="{{ route('processTransaction') }}" method="get">@csrf<div class="form-group"><label for="amount">Số tiền (USD)</label><input type="number" id="amount" name="amount" min="0.01" step="0.01" required></div><button type="submit" class="button" style="margin-top:20px">Tiếp tục thanh toán ↗</button></form></div></main>
+@include('clients.blocks.cuoi-trang-giao-dien')

@@ -1,0 +1,107 @@
+<div class="col-md-3 left_col menu_fixed">
+    <div class="left_col scroll-view">
+        <div class="navbar nav_title" style="border: 0;">
+            <a href="{{ route('admin.dashboard') }}" class="site_title"><i class="fa fa-paper-plane"></i> <span>Travela<span class="brand-period">.</span></span></a>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!-- menu profile quick info -->
+        <div class="profile clearfix">
+            <div class="profile_pic">
+                <img src="{{ asset('admin/assets/images/user-profile/avt_admin.jpg') }}" alt="..."
+                    class="img-circle profile_img">
+            </div>
+            <div class="profile_info">
+                <span>Xin chào,</span>
+                <h2>{{ session('admin', 'Quản trị viên') }}</h2>
+            </div>
+        </div>
+        <!-- /menu profile quick info -->
+
+        <br />
+
+        <!-- sidebar menu -->
+        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+                <h3>Tổng quan</h3>
+                <ul class="nav side-menu">
+                    <li><a href="{{ route('admin.dashboard') }}"><i class="fa fa-dashboard"></i> Tổng quan</a> </li>
+                    <li><a href="{{ route('admin.admin') }}"><i class="fa fa-user-secret"></i> Quản trị viên</a> </li>
+                    <li><a href="{{ route('admin.users') }}"><i class="fa fa-users"></i> Người dùng</a> </li>
+                    <li><a><i class="fa fa-map-o"></i> Quản lý tour<span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                            <li><a href="{{ route('admin.page-add-tours') }}">Thêm tour</a></li>
+                            <li><a href="{{ route('admin.tours') }}">Danh sách tour</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="{{ route('admin.booking') }}"><i class="fa fa-calendar-check-o"></i> Đơn đặt tour</a> </li>
+                    <li><a href="{{ route('admin.private-tours.index') }}"><i class="fa fa-users"></i> Yêu cầu tour riêng</a></li>
+                    <li><a href="{{ route('admin.coupons') }}"><i class="fa fa-ticket"></i> Mã giảm giá</a></li>
+                    <li><a href="{{ route('admin.guide-assignment') }}"><i class="fa fa-user"></i> Phân công hướng dẫn viên</a> </li>
+                    <li><a href="{{ route('admin.guides') }}"><i class="fa fa-address-book-o"></i> Quản lý hướng dẫn viên</a></li>
+                    <li><a href="{{ route('admin.contact') }}"><i class="fa fa-envelope-o"></i> Liên hệ </a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /sidebar menu -->
+
+        <!-- /menu footer buttons -->
+        <div class="sidebar-footer hidden-small">
+            <a href="{{ route('home') }}" title="Xem website" aria-label="Xem website"><i class="fa fa-globe"></i></a>
+            <a href="{{ route('admin.admin') }}" title="Tài khoản" aria-label="Tài khoản"><i class="fa fa-user"></i></a>
+            <a href="{{ route('admin.logout') }}" title="Đăng xuất" aria-label="Đăng xuất"><i class="fa fa-sign-out"></i></a>
+        </div>
+        <!-- /menu footer buttons -->
+    </div>
+</div>
+
+<!-- top navigation -->
+<div class="top_nav">
+    <div class="nav_menu">
+        <div class="nav toggle">
+            <a id="menu_toggle" role="button" tabindex="0" aria-label="Thu gọn hoặc mở menu"><i class="fa fa-bars"></i></a>
+        </div>
+        <nav class="nav navbar-nav">
+            <ul class=" navbar-right">
+                <li class="nav-item dropdown open" style="padding-left: 15px;">
+                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
+                        data-toggle="dropdown" aria-expanded="false">
+                        <img src="{{ asset('admin/assets/images/user-profile/avt_admin.jpg') }}" alt="">
+                        @if (session()->has('admin'))
+                            {{ session('admin') }}
+                        @endif
+                    </a>
+                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('admin.admin') }}"> Thông tin cá nhân</a>
+                        <a class="dropdown-item" href="{{ route('admin.logout') }}"><i
+                                class="fa fa-sign-out pull-right"></i> Đăng xuất</a>
+                    </div>
+                </li>
+
+                <li role="presentation" class="nav-item dropdown open">
+                    <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1"
+                        data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="badge bg-green">{{ $unreadCount }}</span>
+                    </a>
+                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                        @foreach ($unreadContacts->take(3) as $item)
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="{{ route('admin.contact') }}">
+                                    <span>
+                                        <b><span>{{ $item->fullName }}</span></b>
+                                        <span class="time">{{ $item->phoneNumber }}</span>
+                                    </span>
+                                    <span class="message text-contact-truncate" >{{ $item->message }} </span>
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- /top navigation -->

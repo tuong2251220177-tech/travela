@@ -1,0 +1,21 @@
+
+   InvalidArgumentException 
+
+  Unexpected end of input
+
+  at T:\GITTOUR\travela-master\vendor\psy\psysh\src\Shell.php:887
+    883▕ 
+    884▕         if (!$this->hasValidCode()) {
+    885▕             $this->popCodeStack();
+    886▕ 
+  ➜ 887▕             throw new \InvalidArgumentException('Unexpected end of input');
+    888▕         }
+    889▕     }
+    890▕ 
+    891▕     /**
+
+  1   T:\GITTOUR\travela-master\vendor\psy\psysh\src\Shell.php:1342
+      Psy\Shell::setCode("'DB::statement(ALTER TABLE `tbl_admin` ADD COLUMN IF NOT EXISTS `full_name` VARCHAR(255) NULL AFTER `username`);")
+
+  2   T:\GITTOUR\travela-master\vendor\laravel\tinker\src\Console\TinkerCommand.php:76
+      Psy\Shell::execute("'DB::statement(ALTER TABLE `tbl_admin` ADD COLUMN IF NOT EXISTS `full_name` VARCHAR(255) NULL AFTER `username`);")

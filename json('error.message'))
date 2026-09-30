@@ -1,0 +1,21 @@
+
+   Psy\Exception\ParseErrorException 
+
+  PHP Parse error: Syntax error, unexpected ',' on line 1
+
+  at T:\GITTOUR\travela-master\vendor\psy\psysh\src\Exception\ParseErrorException.php:44
+     40▕      * @param \PhpParser\Error $e
+     41▕      */
+     42▕     public static function fromParseError(\PhpParser\Error $e): self
+     43▕     {
+  ➜  44▕         return new self($e->getRawMessage(), $e->getAttributes());
+     45▕     }
+     46▕ }
+     47▕
+
+  1   T:\GITTOUR\travela-master\vendor\psy\psysh\src\CodeCleaner.php:311
+      Psy\Exception\ParseErrorException::fromParseError(Object(PhpParser\Error))
+
+  2   T:\GITTOUR\travela-master\vendor\psy\psysh\src\CodeCleaner.php:240
+      Psy\CodeCleaner::parse("<?php $key = trim((string) config('services.openai.key'), " \\t\\n\\r\""); $response = Illuminate\Support\Facades\Http::withToken($key)-, array('model' =, 'messages' =, 'content' = with OK')), 'max_tokens' =; dump($response-; dump($response-; dump($response-; dump($response-;
+")

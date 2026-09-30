@@ -1,0 +1,311 @@
+/* Giao dien chung: khach hang va quan tri. Nap sau cac stylesheet hien co. */
+:root {
+    --primary: #6545d6;
+    --ink: #202331;
+    --muted: #656878;
+    --line: #e8e8ef;
+    --page: #f8f9fc;
+}
+body.pastel-home, body.client-theme, body.tour-detail-page, body.booking-page, body.order-page {
+    --primary: #6545d6;
+    --ink: #202331;
+    --muted: #656878;
+    --page: #f8f9fc;
+    background: var(--page);
+    color: var(--ink);
+}
+body .site-header { background: #fffffff5; border-color: #ececf2; box-shadow: 0 2px 18px #20233104; }
+body .header-inner { height: 84px; gap: 24px; }
+body .brand { color: #262237; font-size: 28px; letter-spacing: -1.2px; }
+body .brand-mark { display: grid; place-items: center; width: 39px; height: 39px; border-radius: 12px; background: #6545d6; color: white; font-size: 26px; }
+body .brand-dot { display: none; }
+body .desktop-nav { background: transparent; border: 0; gap: 5px; padding: 0; }
+body .desktop-nav a, .pastel-home .desktop-nav a { padding: 10px 13px; font-size: 13px; font-weight: 600; border-radius: 9px; color: #555867; border: 0; }
+body .desktop-nav .active, .pastel-home .desktop-nav .active { background: #f0ecfc; color: #5e3bc8; box-shadow: none; border: 0; }
+body .desktop-nav a:hover { background: #f5f3fb; color: #5e3bc8; box-shadow: none; }
+body .support-link { background: transparent; padding: 0; }
+body .support-link small { font-size: 9px; letter-spacing: .5px; }
+body .support-link strong { font-size: 12px; }
+body .button, .client-theme .theme-btn, .client-theme .btn-primary { border-radius: 10px; background: #6545d6; box-shadow: 0 5px 12px #6545d618; font-size: 14px; font-weight: 700; }
+body .button:hover, .client-theme .theme-btn:hover { background: #5434be; color: white; box-shadow: 0 7px 18px #6545d625; }
+body .button-white { background: white; color: #5339af; }
+body .button-white:hover { background: #f3efff; color: #5339af; }
+body .account-link, body .menu-toggle { width: 40px; height: 40px; border-radius: 10px; background: #f7f6fb; border-color: #e8e4f2; }
+body .account-menu-panel { border-color: #e8e8ef; border-radius: 14px; box-shadow: 0 15px 45px #20233118; }
+.pastel-home .shell { max-width: 1280px; padding-left: 32px; padding-right: 32px; }
+.pastel-home .pastel-hero { min-height: 600px; padding: 82px 0 126px; text-align: left; }
+.pastel-home .pastel-hero.pastel-hero-halong:before { background: linear-gradient(90deg, #122c3dea 0%, #152c3eb8 38%, #13283b38 76%, #17233518 100%); }
+.pastel-home .hero-layout { display: flex; align-items: flex-end; justify-content: space-between; gap: 48px; width: 100%; }
+.hero-copy { max-width: 750px; }
+.pastel-home .pastel-kicker { display: inline-flex; align-items: center; gap: 10px; color: #fff; border: 1px solid #ffffff45; background: #ffffff10; padding: 7px 13px; border-radius: 30px; font-size: 10px; letter-spacing: 1.6px; }
+.pastel-home .pastel-kicker:before { content: ''; width: 6px; height: 6px; background: #d6eab3; border-radius: 50%; }
+.pastel-home .pastel-hero h1 { font-size: clamp(40px, 4.5vw, 64px); line-height: 1.16; letter-spacing: -2.5px; margin: 26px 0 22px; color: white; text-shadow: none; }
+.pastel-home .pastel-hero h1 span { color: #e0d8ff; }
+.pastel-home .pastel-hero p { max-width: 540px; font-size: 16px; line-height: 1.85; color: #f0f3f6; text-shadow: none; }
+.pastel-home .hero-buttons { justify-content: flex-start; margin-top: 30px; gap: 12px; }
+.pastel-home .hero-buttons .button { background: white; color: #28364a; box-shadow: none; padding: 14px 23px; }
+.pastel-home .hero-buttons .button:hover { background: #eeebff; }
+.pastel-home .hero-secondary { border-radius: 10px; font-size: 13px; padding: 13px 21px; color: white; background: #ffffff0a; }
+.hero-location { flex-shrink: 0; border-left: 2px solid #ffffff85; padding: 4px 0 4px 20px; color: white; margin-bottom: 12px; }
+.hero-location small { display: block; font-size: 10px; letter-spacing: 2px; color: #e1e8ec; }
+.hero-location strong { display: block; font-size: 26px; margin: 8px 0 3px; }
+.hero-location span { font-size: 12px; color: #e1e8ec; }
+.pastel-home .search-section { margin-top: -52px; }
+.pastel-home .search-dock { padding: 24px; gap: 16px; border: 1px solid #e8e8ef; border-radius: 16px; box-shadow: 0 14px 40px #22334a10; }
+.pastel-home .search-field { padding: 0 16px 0 0; gap: 12px; }
+.pastel-home .field-icon { border-radius: 11px; background: #f2effb; font-size: 17px; width: 44px; height: 44px; }
+.pastel-home .search-field label { color: #707382; font-size: 10px; letter-spacing: .8px; margin-bottom: 3px; }
+.pastel-home .search-field input, .pastel-home .search-field select { font-size: 14px; color: #272b3a; }
+.home-assurances { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px 36px; padding-top: 24px; color: #686b79; font-size: 12px; }
+.home-assurances span { display: inline-flex; align-items: center; gap: 8px; }
+.home-assurances i { color: #6d52be; }
+.pastel-home .section { padding-top: 80px; padding-bottom: 80px; }
+.pastel-home .section h2, .pastel-home .pastel-cta h2 { font-size: clamp(28px, 2.8vw, 38px); letter-spacing: -1.1px; line-height: 1.3; }
+.pastel-home .eyebrow { padding: 0; background: transparent; color: #6c50bf; border-radius: 0; font-size: 10px; letter-spacing: 1.8px; }
+.pastel-home .section-heading p, .pastel-home .center-heading p { font-size: 14px; color: #656878; line-height: 1.8; }
+.pastel-home .center-heading { margin-bottom: 36px; }
+.pastel-home .region-tabs { border: 1px solid #e5e3ec; background: #fff; border-radius: 11px; padding: 5px; }
+.pastel-home .region-tabs button { font-size: 12px; border-radius: 7px; color: #5b5e6c; padding: 9px 14px; }
+.pastel-home .region-tabs button[aria-pressed=true] { background: #eee8fb; color: #5b38bc; font-weight: 700; }
+body .tour-card, .pastel-home .tour-card { border: 1px solid #e6e7ed; border-radius: 16px; box-shadow: 0 4px 16px #20233104; }
+body .tour-card:hover, .pastel-home .tour-card:hover { box-shadow: 0 14px 32px #20233112; transform: translateY(-4px); }
+.pastel-home .tour-image { height: 235px; }
+.client-theme .tour-card .tour-image { height: 215px; }
+body .tour-badge, .pastel-home .tour-badge { background: #fffffff2; color: #48366e; font-size: 10px; border-radius: 7px; padding: 6px 10px; top: 14px; left: 14px; }
+body .tour-body, .pastel-home .tour-body { padding: 22px; }
+body .tour-meta, .pastel-home .tour-meta { font-size: 12px; gap: 12px; }
+body .tour-card h3, .client-theme .tour-card h3, .pastel-home .tour-card h3 { font-size: 17px; line-height: 1.55; min-height: 53px; margin: 12px 0; color: #252937; }
+body .tour-departure { font-size: 12px; color: #707382; margin-bottom: 6px; }
+body .tour-seats, .pastel-home .tour-seats { font-size: 12px; color: #53786b; margin-bottom: 16px; }
+body .tour-bottom, .pastel-home .tour-bottom { margin-top: auto; border-color: #ececf2; padding-top: 17px; gap: 12px; }
+body .tour-bottom small { font-size: 9px; color: #737582; }
+body .tour-bottom strong, .pastel-home .tour-bottom strong { font-size: 23px; color: #6243cb; }
+body .per-person { font-size: 11px; }
+body .card-link, .pastel-home .card-link { border-radius: 9px; background: #f0ecfb; color: #5b3abc; font-size: 12px; padding: 10px 13px; }
+.pastel-home .pastel-link { border: 1px solid #e0dbed; background: white; border-radius: 9px; font-size: 13px; padding: 11px 22px; }
+.pastel-home .pastel-destinations { background: #f0f2f6; }
+.pastel-home .destination-grid { gap: 20px; }
+.pastel-home .destination-tile { min-height: 280px; padding: 27px; border-radius: 15px; transition: transform .2s; }
+.pastel-home .destination-tile:hover { transform: translateY(-3px); }
+.pastel-home .destination-tile:before { background: linear-gradient(0deg, #122c3be6, #172a3633 70%); }
+.pastel-home .destination-tile h3 { font-size: 26px; margin: 7px 0; color: white; }
+.pastel-home .destination-tile p { font-size: 12px; color: #f3f5f8; }
+.pastel-home .destination-tile span { font-size: 12px; }
+.pastel-home .pastel-regions, .pastel-home .pastel-inspiration { background: #f8f9fc; }
+.pastel-home .region-card { border: 1px solid #e6e7ed; border-radius: 15px; box-shadow: none; }
+.pastel-home .region-content { padding: 25px; }
+.pastel-home .region-content p { font-size: 14px; line-height: 1.8; color: #656878; }
+.pastel-home .region-photo span { border-radius: 7px; padding: 7px 12px; font-size: 11px; }
+.pastel-home .why-grid { gap: 20px; }
+.pastel-home .why-card { background: white; border: 1px solid #e8e8ef; border-radius: 14px; padding: 27px; }
+.pastel-home .why-card>i { background: #f1edfc; color: #6545c4; }
+.pastel-home .why-card h3 { font-size: 17px; margin-top: 23px; }
+.pastel-home .why-card p { font-size: 13px; line-height: 1.85; color: #656878; }
+.pastel-home .pastel-review { border-color: #e6e7ed; border-radius: 15px; font-size: 14px; }
+.pastel-home .pastel-cta { padding: 52px; border-radius: 18px; box-shadow: none; }
+.pastel-home .pastel-cta:before { background: linear-gradient(100deg,#252042ee,#3c3266b0); }
+.pastel-home .pastel-cta .eyebrow { color: #d6c9ff; }
+.pastel-home .pastel-cta p { font-size: 14px; }
+body .site-footer, .pastel-home .site-footer { background: #202435; color: #f7f7fb; border: 0; padding-top: 62px; }
+body .site-footer .brand { color: white; }
+body .site-footer h3 { color: #fff; font-size: 14px; }
+body .site-footer .footer-grid p, body .site-footer .footer-grid>div>a:not(.brand), body .site-footer .footer-bottom { color: #c4c8d5; font-size: 12px; }
+body .site-footer .footer-bottom { border-color: #ffffff18; }
+body .site-footer a:hover { color: white; }
+.client-theme .site-page-intro { background: #f0edf8; border-color: #e7e4ef; padding: 28px 0 42px; }
+.client-theme .site-page-intro h1 { font-size: clamp(30px, 3.2vw, 44px); }
+.client-theme .site-page-intro p { font-size: 15px; color: #626574; }
+.client-theme .site-page-intro nav { font-size: 12px; margin-bottom: 22px; }
+.client-theme .site-page-intro .intro-spark { color: #e0d8f2; }
+.client-theme .shop-sidebar, .client-theme .shop-shorter, .client-theme .card, .client-theme .comment-form { border-color: #e6e7ed; border-radius: 14px; }
+.client-theme .shop-sidebar .widget-title { font-size: 15px; }
+.client-theme .radio-filter label, .client-theme .shop-shorter .sort-text { font-size: 13px; }
+.client-theme .contact-info-item { background: white; border: 1px solid #e6e7ed; border-radius: 14px; padding: 25px; box-shadow: none; }
+.client-theme .contact-info-item .icon { color: #6545d6; background: #f1edfc; }
+.client-theme .contact-info-content .section-title h2 { font-size: 30px; line-height: 1.4; }
+.client-theme .form-control, .client-theme textarea { border-color: #dedfe7; font-size: 14px; border-radius: 9px; }
+
+/* Quan tri: phan cap ro rang, bang du lieu de doc. */
+/* Override both nav-md and nav-sm positioning from the original admin theme. */
+body.admin-theme .container.body .main_container > .col-md-3.left_col {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 0;
+    z-index: 1000;
+}
+.admin-theme .left_col .scroll-view { position: relative; width: 100%; height: 100%; min-height: 0; overflow-y: auto; overflow-x: hidden; padding-bottom: 80px; }
+.admin-theme .sidebar-footer { bottom: 0; }
+.admin-theme .right_col, .admin-theme .x_panel, .admin-theme .x_content { min-width: 0; }
+.admin-theme .workspace-heading > div { min-width: 0; }
+.admin-theme .workspace-heading h1 { overflow-wrap: anywhere; }
+.admin-theme .booking-table-panel { min-width: 0; width: 100%; }
+.admin-theme .booking-table-panel > p { margin-bottom: 22px; font-size: 13px; line-height: 1.8; }
+.admin-theme #datatable-booking_wrapper { overflow: visible; }
+.admin-theme #datatable-booking_wrapper .dt-buttons { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; float: none; }
+.admin-theme #datatable-booking_wrapper .dt-buttons .btn { flex: 0 0 auto; margin: 0; border: 1px solid #e1e5ee; border-radius: 8px!important; background: #f8f9fc; color: #535b70; }
+.admin-theme #datatable-booking_wrapper .dataTables_length { float: left; margin: 0 0 18px; }
+.admin-theme #datatable-booking_wrapper .dataTables_filter { float: right; margin: 0 0 18px; }
+.admin-theme #datatable-booking_wrapper .dataTables_filter input { border-radius: 8px; width: 220px; max-width: 100%; }
+.admin-theme #datatable-booking { display: table; table-layout: auto; width: 100%!important; clear: both; border: 1px solid #e5e8ef; }
+.admin-theme #datatable-booking th, .admin-theme #datatable-booking td { word-break: normal; overflow-wrap: break-word; line-height: 1.65; }
+.admin-theme #datatable-booking .booking-tour { min-width: 190px; }
+.admin-theme #datatable-booking .booking-customer { min-width: 140px; }
+.admin-theme #datatable-booking .booking-money { min-width: 150px; white-space: nowrap; }
+.admin-theme #datatable-booking .booking-status { min-width: 140px; }
+.admin-theme #datatable-booking .booking-actions { min-width: 175px; }
+.admin-theme #datatable-booking td:first-child { font-weight: 600; }
+.admin-theme #datatable-booking td small { display: inline-block; margin-top: 6px; font-size: 11px; color: #687083; font-weight: 500; }
+.admin-theme #datatable-booking .badge { white-space: normal; line-height: 1.5; font-size: 11px; padding: 5px 8px; border-radius: 6px; }
+.admin-theme #datatable-booking td.child { padding: 18px 22px; background: #f6f8fc; }
+.admin-theme #datatable-booking .dtr-details { display: block; width: 100%; }
+.admin-theme #datatable-booking .dtr-details li { display: flex; flex-wrap: wrap; gap: 5px 18px; padding: 10px 0; border-color: #e3e8f0; }
+.admin-theme #datatable-booking .dtr-title { min-width: 145px; color: #59647a; font-size: 12px; }
+.admin-theme #datatable-booking .dtr-data { min-width: 0; overflow-wrap: anywhere; font-weight: 500; }
+.admin-theme #datatable-booking_wrapper .dataTables_info { padding-top: 16px; }
+.admin-theme #datatable-booking_wrapper .dataTables_paginate { padding-top: 12px; }
+@media (max-width: 767px) {
+    .admin-theme #datatable-booking_wrapper .dataTables_length,
+    .admin-theme #datatable-booking_wrapper .dataTables_filter { float: none; text-align: left; }
+    .admin-theme #datatable-booking_wrapper .dataTables_filter label { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .admin-theme #datatable-booking_wrapper .dataTables_filter input { margin-left: 0; width: 100%; }
+    .admin-theme #datatable-booking .booking-tour { min-width: 150px; }
+    .admin-theme #datatable-booking .dtr-title { min-width: 100%; }
+}
+body.admin-theme { --staff-ink: #272b3c; --staff-muted: #656b7d; --staff-border: #e5e8ef; background: #f4f6fa!important; color: #272b3c; font-size: 14px; }
+.admin-theme .container.body, .admin-theme .right_col { background: #f4f6fa; }
+.admin-theme .left_col, .admin-theme .nav_title, .admin-theme .sidebar-footer { background: #20253b; }
+.admin-theme .nav_title { height: 84px; }
+.admin-theme .site_title i { color: #d2c6ff; background: #ffffff0c; border-radius: 10px; }
+.admin-theme .profile { background: #ffffff06; border-color: #ffffff12; border-radius: 10px; padding: 16px 12px; }
+.admin-theme .profile_img { border: 2px solid #79718f; }
+.admin-theme .profile_info span { color: #b0b7ca; font-size: 11px; }
+.admin-theme .profile_info h2 { font-size: 13px; }
+.admin-theme .menu_section>h3 { color: #9ca6c0; font-size: 10px; letter-spacing: 1.3px; }
+.admin-theme .nav.side-menu>li>a { border-radius: 9px; margin: 4px 12px; padding: 13px 12px; color: #d5daea!important; font-size: 13px; }
+.admin-theme .nav.side-menu>li>a i { color: #9ea8c4; font-size: 17px; }
+.admin-theme .nav.side-menu>li.active>a, .admin-theme .nav.side-menu>li.current-page>a { background: #6950ca; color: white!important; box-shadow: none; }
+.admin-theme .nav.child_menu>li>a { color: #c1c8da; font-size: 12px; }
+.admin-theme .nav_menu { background: white; border-color: #e5e8ef; min-height: 73px; box-shadow: none; }
+.admin-theme .top_nav { display: flow-root; }
+.admin-theme .right_col { display: flow-root; }
+.admin-theme .top_nav .nav>li>a { font-size: 13px; }
+.admin-theme .workspace-heading { padding-bottom: 23px; margin-bottom: 26px; border-bottom: 1px solid #e3e7ee; }
+.admin-theme .workspace-heading>div>span { color: #7b7f91; font-size: 10px; letter-spacing: 1.6px; }
+.admin-theme .workspace-heading h1 { color: #272b3c; font-size: 30px; letter-spacing: -.9px; }
+.admin-theme .workspace-heading p { color: #687083; font-size: 13px; }
+.admin-theme .workspace-site-link { border-color: #dfe3eb; border-radius: 9px; font-size: 12px; padding: 10px 15px; color: #4c5266; }
+.admin-theme .x_panel { border-color: #e4e8ef; border-radius: 13px; box-shadow: 0 3px 10px #202c4503; padding: 23px; }
+.admin-theme .x_title { border-color: #edf0f5; padding-bottom: 13px; margin-bottom: 18px; }
+.admin-theme .x_title h2 { font-size: 17px; color: #30364a; }
+.admin-theme .x_title small { font-size: 12px; color: #687083; }
+.admin-theme .tile_info .green { color: #1abc9c; }
+.admin-theme .tile_info .red { color: #e74c3c; }
+.admin-theme .tile_info .purple { color: #9b59b6; }
+.admin-theme .btn { border-radius: 8px; font-size: 13px; padding: 9px 15px; box-shadow: none; }
+.admin-theme .btn-primary { background: #6545d6; border-color: #6545d6; color: white; }
+.admin-theme .btn-primary:hover { background: #5435bd; border-color: #5435bd; }
+.admin-theme .btn-success { background: #e5f3ec; border-color: #cae7d7; color: #286345; }
+.admin-theme .btn-danger { background: #fff0f0; border-color: #f5d4d4; color: #b03f45; }
+.admin-theme .btn-info { background: #edf1fd; border-color: #d8e1f7; color: #415eb2; }
+.admin-theme .btn-warning { background: #fff6e6; border-color: #ecd9b5; color: #865c1c; }
+.admin-theme .form-control { border: 1px solid #dce1e9; background: white; border-radius: 8px; font-size: 14px; min-height: 42px; box-shadow: none; }
+.admin-theme .form-control:focus { border-color: #9d86e4; box-shadow: 0 0 0 3px #6545d615; }
+.admin-theme label { font-size: 13px; }
+.admin-theme .table { font-size: 13px; }
+.admin-theme .table>thead>tr>th { background: #f5f7fb; color: #545e74; font-size: 11px; letter-spacing: .35px; padding: 14px 13px; border-bottom: 1px solid #e3e8f0; vertical-align: middle; }
+.admin-theme .table>tbody>tr>td { padding: 14px 13px; border-color: #edf0f5; vertical-align: middle; }
+.admin-theme .table-striped>tbody>tr:nth-of-type(odd) { background: #fbfcfe; }
+.admin-theme .table-hover>tbody>tr:hover { background: #f5f3fc; }
+.admin-theme .table .btn { padding: 6px 9px; font-size: 12px; }
+.admin-theme .table-responsive { border-color: #e5e8ef; border-radius: 10px; }
+.admin-theme .dataTables_info, .admin-theme .dataTables_filter, .admin-theme .dataTables_length { font-size: 12px; }
+.admin-theme .modal-content { border-color: #e4e8ef; border-radius: 14px; box-shadow: 0 25px 70px #20253b30; }
+.admin-theme .modal-header { background: #f8f9fc; border-radius: 14px 14px 0 0; border-color: #e7eaf0; }
+.admin-theme .well { background: #fafbfe; border-color: #e5e8ef; border-radius: 12px; }
+.admin-summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; margin-bottom: 28px; }
+.admin-stat { background: white; border: 1px solid #e4e8ef; border-radius: 13px; padding: 22px; min-width: 0; }
+.admin-stat-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.admin-stat-top>span { font-size: 12px; font-weight: 600; color: #656c7f; }
+.admin-stat-top>i { display: grid; place-items: center; width: 37px; height: 37px; background: #f0ebfc; color: #7455c3; border-radius: 10px; flex-shrink: 0; }
+.admin-stat:nth-child(2) .admin-stat-top>i { background: #eaf1fd; color: #557eb8; }
+.admin-stat:nth-child(3) .admin-stat-top>i { background: #eaf5ee; color: #42845d; }
+.admin-stat:nth-child(4) .admin-stat-top>i { background: #fff4df; color: #a2792e; }
+.admin-stat-value { display: block; font-size: clamp(22px, 2.3vw, 34px); letter-spacing: -1px; line-height: 1.4; color: #2d3348; font-weight: 800; margin-top: 17px; overflow-wrap: anywhere; }
+.admin-stat-value small { font-size: 13px; letter-spacing: 0; color: #7b8192; }
+.admin-stat>a, .admin-stat>span { display: inline-block; margin-top: 9px; font-size: 11px; color: #697185; }
+.admin-stat>a:hover { color: #6545d6; text-decoration: underline; }
+.admin-shortcuts { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 0 0 26px; }
+.admin-shortcuts>span { font-size: 12px; color: #687083; margin-right: 4px; }
+.admin-shortcuts a { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border: 1px solid #dfe4ec; border-radius: 8px; background: white; color: #535b70; font-size: 12px; }
+.admin-shortcuts a:hover { border-color: #b5a2e5; color: #6545d6; }
+.admin-theme.staff-login { background: #eef0f6!important; }
+.admin-theme.staff-login { min-height: 100vh; min-height: 100dvh; }
+.admin-theme.staff-login .login_wrapper { float: none; width: 100%; max-width: 460px; margin: 0 auto; }
+.admin-theme.staff-login .login_content { border-color: #e0e4ed; border-radius: 18px!important; box-shadow: 0 20px 60px #20253b0a!important; }
+.admin-theme.staff-login .login_content form .submit { background: #6545d6; border-radius: 9px; font-size: 14px; }
+.admin-theme.staff-login .login_content form input.form-control { background: white; border-color: #dfe3ec; border-radius: 9px; font-size: 14px; }
+.admin-theme footer { color: #7a8193; border-color: #e4e8ef; font-size: 12px; }
+
+@media (max-width: 1199px) {
+    body .header-actions .support-link { display: none; }
+    .hero-location { display: none; }
+    .admin-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 991px) {
+    body .desktop-nav { display: none; }
+    body .menu-toggle { display: grid; }
+    .pastel-home .pastel-hero { min-height: 550px; padding-top: 65px; }
+    .pastel-home .search-dock { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    .pastel-home .search-field { border: 0; }
+    .pastel-home .search-dock>.button { align-self: stretch; }
+    .pastel-home .section-heading { align-items: flex-start; flex-direction: column; }
+    .pastel-home .why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 650px) {
+    .client-theme .container { padding-left: 20px; padding-right: 20px; }
+    body .header-inner, .pastel-home .header-inner { height: 72px; gap: 12px; }
+    .pastel-home .shell { padding-left: 20px; padding-right: 20px; }
+    body .header-actions { gap: 8px; }
+    body .header-actions>.button { display: none; }
+    .pastel-home .pastel-hero { min-height: 510px; padding: 55px 0 95px; }
+    .pastel-home .pastel-hero h1 { font-size: 39px; letter-spacing: -1.5px; line-height: 1.22; }
+    .pastel-home .pastel-hero p { font-size: 14px; }
+    .pastel-home .pastel-kicker { font-size: 8px; letter-spacing: 1px; padding: 7px 10px; }
+    .pastel-home .hero-buttons { gap: 10px; flex-wrap: wrap; }
+    .pastel-home .hero-buttons .button, .pastel-home .hero-secondary { padding: 12px 15px; font-size: 12px; }
+    .pastel-home .search-section { margin-top: -38px; }
+    .pastel-home .search-dock { padding: 20px; gap: 18px; }
+    .pastel-home .search-field:first-child, .pastel-home .search-dock>.button { grid-column: 1 / -1; }
+    .pastel-home .search-field { padding: 0; gap: 8px; }
+    .pastel-home .search-field:not(:first-child) .field-icon { display: none; }
+    .pastel-home .search-field input, .pastel-home .search-field select { font-size: 16px; }
+    .home-assurances { gap: 10px 18px; font-size: 11px; justify-content: flex-start; }
+    .pastel-home .section { padding-top: 52px; padding-bottom: 52px; }
+    .pastel-home .region-tabs { width: 100%; justify-content: space-between; gap: 1px; }
+    .pastel-home .region-tabs button { font-size: 11px; padding: 9px; }
+    .pastel-home .why-grid { gap: 12px; }
+    .pastel-home .why-card { padding: 19px; }
+    .pastel-home .why-card h3 { font-size: 15px; }
+    .pastel-home .why-card p { font-size: 12px; }
+    .pastel-home .pastel-cta { padding: 28px; }
+    .admin-theme .workspace-heading { align-items: flex-start; flex-wrap: wrap; gap: 15px; }
+    .admin-theme .workspace-heading h1 { font-size: 25px; }
+    .admin-summary { gap: 12px; }
+    .admin-stat { padding: 16px; }
+    .admin-stat-top { align-items: flex-start; flex-direction: column-reverse; }
+    .admin-stat-value { font-size: 24px; }
+    .admin-stat-value small { font-size: 11px; }
+    .admin-theme .form-control, .client-theme .form-control { font-size: 16px; }
+    .admin-theme .x_panel { padding: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    body .tour-card, body .tour-card img, body .destination-tile, body .button { transition: none; transform: none; }
+}
+@media print {
+    .admin-shortcuts { display: none; }
+    .admin-stat { break-inside: avoid; }
+}

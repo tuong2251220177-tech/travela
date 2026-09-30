@@ -1,0 +1,43 @@
+.guide-assignment-page .guide-overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:0 0 24px}
+.guide-assignment-page .guide-overview>div{display:flex;align-items:center;gap:16px;padding:20px 24px;background:#fff;border:1px solid #e4e6f0;border-radius:16px}
+.guide-assignment-page .guide-stat-icon{display:grid;place-items:center;width:46px;height:46px;flex-shrink:0;border-radius:14px;background:#f0eaff;color:#7045ce;font-size:20px}
+.guide-assignment-page .guide-overview strong{display:block;font-size:26px;line-height:1.3;color:#282c43}
+.guide-assignment-page .guide-overview div div>span{display:block;font-size:13px;margin-top:5px;color:#7b7e91}
+.guide-assignment-page .x_panel{padding:24px;border-radius:16px;margin-bottom:22px}
+.guide-assignment-page .x_title h2{font-size:17px;font-weight:700}
+.guide-assignment-page .guide-section-description{font-size:13px;color:#7b7e91;margin:0 0 22px;line-height:1.7}
+.guide-assignment-page .guide-assign-form,.guide-assignment-page .guide-account-form{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px 22px}
+.guide-assignment-page .guide-assign-form .form-group,.guide-assignment-page .guide-account-form .form-group{margin:0;min-width:0}
+.guide-assignment-page .guide-assign-form .form-group:nth-of-type(2){grid-column:span 2}
+.guide-assignment-page .guide-assign-form .form-group:last-of-type{grid-column:1/-1}
+.guide-assignment-page .guide-assign-form>button,.guide-assignment-page .guide-account-form>button{grid-column:1/-1;justify-self:start;margin:0;padding:12px 24px;font-size:14px;font-weight:600;border-radius:10px}
+.guide-assignment-page .form-group>label{font-size:13px;color:#3b3e55;margin-bottom:8px}
+.guide-assignment-page .form-control{width:100%;min-height:44px;height:auto;border-radius:10px;padding:10px 12px;background:#fbfbfe;border:1px solid #dfe2ef;font-size:14px;box-shadow:none}
+.guide-assignment-page .form-control:focus{border-color:#9778df;box-shadow:0 0 0 3px #7144d012;background:#fff}
+.guide-assignment-page textarea.form-control{resize:vertical;min-height:78px}
+.guide-assignment-page .guide-account-details{border:1px dashed #d7c9ee;border-radius:14px;background:#faf8ff;margin-bottom:24px;overflow:hidden}
+.guide-assignment-page .guide-account-details>summary{display:flex;align-items:center;justify-content:space-between;gap:14px;cursor:pointer;padding:18px 22px;color:#6245a0;font-size:14px;font-weight:600;list-style:none}
+.guide-assignment-page .guide-account-details>summary::-webkit-details-marker{display:none}
+.guide-assignment-page .guide-account-details>summary:focus-visible{outline:3px solid #9676d9;outline-offset:-4px}
+.guide-assignment-page .guide-account-details>summary i{margin-right:8px}
+.guide-assignment-page .guide-account-hint{font-size:12px;font-weight:400}
+.guide-assignment-page .guide-account-details[open] .fa-angle-down{transform:rotate(180deg)}
+.guide-assignment-page .guide-account-form{padding:20px 22px;border-top:1px solid #e9e0f7}
+.guide-assignment-page .guide-account-form h4{display:none}
+.guide-assignment-page .guide-assignment-table-wrap{overflow-x:auto;border:1px solid #e6e7f0;border-radius:12px}
+.guide-assignment-page .guide-assignment-table{width:100%;min-width:920px;margin:0;border:0;table-layout:auto}
+.guide-assignment-page .guide-assignment-table thead th{background:#f5f4fa;color:#73718a;border:0;border-bottom:1px solid #e6e7f0;padding:15px 12px;font-size:12px;font-weight:600;white-space:nowrap}
+.guide-assignment-page .guide-assignment-table tbody td{border:0;border-bottom:1px solid #ececf4;padding:18px 12px;vertical-align:middle;font-size:13px;line-height:1.7;color:#42445c}
+.guide-assignment-page .guide-assignment-table tbody tr:last-child td{border-bottom:0}
+.guide-assignment-page .guide-assignment-table tbody tr:nth-of-type(odd){background:#fff}
+.guide-assignment-page .guide-assignment-table tbody tr:nth-of-type(even){background:#fcfbff}
+.guide-assignment-page .guide-assignment-table tbody tr:hover{background:#f7f4fd}
+.guide-assignment-page .guide-assignment-table th:nth-child(3){min-width:220px}
+.guide-assignment-page .guide-assignment-table th:nth-child(4){min-width:130px}
+.guide-assignment-page .guide-assignment-table th:last-child{min-width:185px}
+.guide-assignment-page .guide-assignment-table .badge{font-size:11px;font-weight:600;padding:7px 10px;border-radius:7px;line-height:1.5;white-space:nowrap}
+.guide-assignment-page .guide-row-actions{display:grid;grid-template-columns:repeat(2,max-content);gap:8px}
+.guide-assignment-page .guide-row-actions form{margin:0}
+.guide-assignment-page .guide-row-actions .btn{margin:0;width:100%;padding:7px 10px;border-radius:8px;font-size:12px;white-space:nowrap}
+@media(max-width:1000px){.guide-assignment-page .guide-assign-form,.guide-assignment-page .guide-account-form{grid-template-columns:repeat(2,minmax(0,1fr))}.guide-assignment-page .guide-assign-form .form-group:nth-of-type(2){grid-column:auto}.guide-assignment-page .guide-overview>div{padding:16px;gap:12px}}
+@media(max-width:600px){.guide-assignment-page .guide-overview{grid-template-columns:1fr;gap:10px}.guide-assignment-page .guide-overview>div{padding:14px 18px}.guide-assignment-page .guide-overview strong{font-size:22px}.guide-assignment-page .guide-assign-form,.guide-assignment-page .guide-account-form{grid-template-columns:1fr;gap:16px}.guide-assignment-page .x_panel{padding:18px}.guide-assignment-page .form-control{font-size:16px}.guide-assignment-page .guide-account-hint{display:none}.guide-assignment-page .guide-assign-form>button{width:100%}}
